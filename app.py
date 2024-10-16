@@ -42,10 +42,10 @@ st.write("Predict the selling price of a used car based on its characteristics")
 # User input fields
 year = st.number_input('Year of Manufacture', min_value=1990, max_value=2024, value=2015)
 km_driven = st.number_input('Kilometers Driven', min_value=0, max_value=1000000, value=50000)
-fuel = st.selectbox('Fuel Type', ['Petrol', 'Diesel', 'CNG', 'LPG', 'Electric'])
-seller_type = st.selectbox('Seller Type', ['Individual', 'Dealer'])
-transmission = st.selectbox('Transmission', ['Manual', 'Automatic'])
-owner = st.selectbox('Owner', ['First Owner', 'Second Owner', 'Third Owner', 'Fourth & Above Owner'])
+fuel = st.selectbox('Fuel Type 0(CNG), 1(Disel), 2(Electric),3(LPG),4(Petrol)', [0,1,2,3,4])
+seller_type = st.selectbox('Seller Type 0(Dealer), 1(Individual) 2(Trust Dealer)', [0,1,2])
+transmission = st.selectbox('Transmission 0(Automatic), 1(Manual)', ['0,1])
+owner = st.selectbox('Owner 0(1st Owner), 1(4th & above owner), 2(2nd owner), 3(Test Drive), 4(3rd Owner)', [0,1,2,3,4])
 
 # Predict button
 if st.button('Predict Price'):
