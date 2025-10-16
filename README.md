@@ -15,4 +15,4 @@ Below are the details of the file:-
 3. EDA_Graphical_Analysis --> EDA
 4. app.py --> Streamlit app
 5. best_model.pkl --> Saved ML Model
-6. project ppt --> Deatiled presenation onto thr project
+6. project ppt --> Deatiled presenation onto the project & stremalit app link
